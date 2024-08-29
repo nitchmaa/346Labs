@@ -12,7 +12,7 @@ void setup() {
 void loop() {
   for (int count = 0; count < 256; count++) {
     displayBinary(count);
-    delay(1000); // Wait for 1 second
+    delay(250); // Wait for 1 second
   }
 }
 
