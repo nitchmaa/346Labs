@@ -1,4 +1,4 @@
-//hello paige
+//Lab 1 Step 13
 int led = 4;  //assigning the variable led to represent 4
 
 

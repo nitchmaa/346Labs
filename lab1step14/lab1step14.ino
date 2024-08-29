@@ -11,7 +11,7 @@ void loop() {
   float voltage = sensorValue * (5.0 / 1023.0);
   
   // Print out the voltage
-  Serial.println(voltage);
+  Serial.println(voltage);n
   
   // Delay in between reads for stability
   delay(100);
