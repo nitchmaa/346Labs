@@ -1,17 +1,19 @@
-const int ledPins[] = {0,1, 2, 3, 4, 5,6,7}; // LED pins
+const int ledPins[] = {2, 3, 4, 5,6,7,8,9}; // LED pins
 
 void setup() {
+  // set up serial monitor
+  Serial.begin(9600);
+  delay(1000);
   // Set all LED pins as output
   for (int i = 0; i < 8; i++) {
     pinMode(ledPins[i], OUTPUT);
-    
-  }
+      } 
 }
 
 void loop() {
   for (int count = 0; count < 256; count++) {
     displayBinary(count);
-    delay(1000); // Wait for 1 second
+    delay(250); // Wait for 1 second
   }
 }
 
