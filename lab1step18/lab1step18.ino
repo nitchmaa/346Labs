@@ -1,23 +1,30 @@
-const int ledPins[] = {0,1, 2, 3, 4, 5,6,7}; // LED pins
+const int ledPins[] = {0,1, 2, 3}; // LED pins
+int count;
+int input= 5;
 
 void setup() {
- // Initialize serial communication at 9600 bits per second
-    Serial.begin(9600);
-  // Set all LED pins as output
-  for (int i = 0; i < 8; i++) {
-    pinMode(ledPins[i], OUTPUT);
+  Serial.begin(9600); // Start the serial communication
+  delay(1000); //wait for serial port to connect
+  Serial.println("Enter a numer between 0 and 15:");
+
+  for (int i = 0; i < 4; i++) {   // Set all LED pins as output
+    pinMode(ledPins[i], OUTPUT);  // Set all LED pins as output
   }
 }
 
 void loop() {
-  for (int count = 0; count < 256; count++) {
+  
+  for (int count = 0; count < 16; count++) {
     displayBinary(count);
-    delay(250); // Wait for 1 second
+    if(count==input){
+    delay(1000); // Wait for 1 second
+    }
+   
   }
 }
 
 void displayBinary(int number) {
-  for (int i = 0; i < 8; i++) {
+  for (int i = 0; i < 4; i++) {
     int bit = bitRead(number, i);
     digitalWrite(ledPins[i], bit);
   }
