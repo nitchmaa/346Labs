@@ -1,3 +1,13 @@
+/********************************************************
+ * Student: Paige Rabideaux, Andrew Nitchman
+ * Course: EGR348-903
+ * Date: 8/29/2024
+ * Instructor: Prof Ali
+ * Assignment: Post Lab 1
+ * Description: This code takes user input in the form of a 
+ *              character, and displays it on the serial monitor
+  ************************************************************/
+
 void setup() {
   // Initialize serial communication at 9600 bits per second
   Serial.begin(9600);
@@ -16,4 +26,4 @@ void loop() {
     Serial.println(incomingByte);
   }
 }
-//comment
+
