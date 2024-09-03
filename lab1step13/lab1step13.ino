@@ -1,6 +1,14 @@
+/********************************************************
+ * Student: Paige Rabideaux, Andrew Nitchman
+ * Course: EGR348-903
+ * Section: 903
+ * Date: 8/29/2024
+ * Instructor: Prof Ali
+ * Assignment: Post Lab 1
+ * Description: This code flashes an LED every second using pin 4 on the Arduino
+  ************************************************************/
 
 int led = 4;  //assigning the variable led to represent 4
-
 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
