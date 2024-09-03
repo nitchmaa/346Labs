@@ -1,5 +1,5 @@
 /********************************************************
- * Student: Paige Rabideaux, Andrew Nitchman and todd
+ * Student: Paige Rabideaux, Andrew Nitchman
  * Course: EGR348-903
  * Section: 903
  * Date: 8/29/2024
