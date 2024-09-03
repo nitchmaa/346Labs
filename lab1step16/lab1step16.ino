@@ -25,10 +25,14 @@ void loop() {
   }
 }
 
-
-void displayBinary(int number) {
+  /*nombers is an 8 bit number so for-loop iterates
+  8 times to look at each bit.  If the bit is a 1,
+  digitalWrite is used to return the value of that
+  bit with its position so that the led can match it
+  value and position.  */
+void displayBinary(int nombers) {
   for (int i = 0; i < 8; i++) {
-    int bit = bitRead(number, i);
+    int bit = bitRead(nombers, i);
     digitalWrite(ledPins[i], bit);
   }
 }
